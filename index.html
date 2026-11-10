@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pari Depilaci&#243;n con Hilo | Depilaci&#243;n con hilo en San Sebasti&#225;n de los Reyes</title>
+<meta name="description" content="Pari Depilaci&#243;n con Hilo - Depilaci&#243;n con hilo en San Sebasti&#225;n de los Reyes. 4,8 estrellas en Google. Pide tu cita por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--c1:#6b2d55;--c2:#e8c79a;--bg:#fbf6f1;--ink:#2a1622;--hf:'Yeseva One',serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+h1,h2,h3,.logo{font-family:var(--hf);font-weight:400}
+a{color:inherit}
+.wrap{max-width:1150px;margin:0 auto;padding:0 22px}
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,.06)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-size:1.35rem;color:var(--c1);text-decoration:none}
+nav{display:flex;gap:26px;align-items:center}
+nav a{text-decoration:none;font-size:.92rem;font-weight:500;color:#333}
+nav a:hover{color:var(--c1)}
+.btn{display:inline-block;padding:13px 26px;border-radius:40px;text-decoration:none;font-weight:600;font-size:.95rem;transition:.25s}
+.btn-main{background:var(--c1);color:#fff}
+.btn-main:hover{filter:brightness(1.12);transform:translateY(-2px)}
+.btn-ghost{border:2px solid #fff;color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--ink)}
+.nav-cta{padding:9px 18px;font-size:.85rem}
+.hero{min-height:92vh;display:flex;align-items:center;background:linear-gradient(110deg,rgba(0,0,0,.72),rgba(0,0,0,.25)),url('https://images.unsplash.com/photo-1783013951101-2d9ed3eac234?q=80&w=1800&auto=format&fit=crop') center/cover;color:#fff;padding-top:68px}
+.hero .tag{display:inline-block;background:var(--c2);color:var(--ink);padding:6px 14px;border-radius:30px;font-size:.8rem;font-weight:600;margin-bottom:20px}
+.hero h1{font-size:clamp(2.3rem,5.5vw,4.2rem);line-height:1.08;max-width:760px;margin-bottom:20px}
+.hero p{font-size:1.1rem;max-width:560px;opacity:.92;margin-bottom:32px}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+.stats{background:var(--c1);color:#fff}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);text-align:center;padding-top:30px;padding-bottom:30px;gap:10px}
+.stats b{display:block;font-family:var(--hf);font-size:2rem}
+.stats span{font-size:.85rem;opacity:.85}
+section{padding:90px 0}
+.head{text-align:center;max-width:640px;margin:0 auto 50px}
+.head small{color:var(--c1);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.78rem}
+.head h2{font-size:clamp(1.9rem,4vw,2.8rem);margin:8px 0 12px;line-height:1.15}
+.head p{color:#666}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border-radius:18px;padding:30px;box-shadow:0 6px 24px rgba(0,0,0,.06);transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 14px 34px rgba(0,0,0,.1)}
+.card .ic{font-size:2rem;margin-bottom:14px}
+.card h3{font-size:1.25rem;margin-bottom:8px}
+.card p{color:#666;font-size:.94rem}
+.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;gap:16px}
+.gallery img{width:100%;height:360px;object-fit:cover;border-radius:18px}
+.alt{background:#fff}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.why{text-align:center;padding:26px 18px;border-radius:18px;background:var(--bg)}
+.why .ic{font-size:2rem}
+.why h3{font-size:1.1rem;margin:10px 0 6px}
+.why p{font-size:.9rem;color:#666}
+.step{text-align:center}
+.step .n{width:58px;height:58px;border-radius:50%;background:var(--c1);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--hf);font-size:1.4rem;margin:0 auto 14px}
+.step h3{font-size:1.1rem;margin-bottom:6px}
+.step p{font-size:.9rem;color:#666}
+.note{display:inline-block;background:#fff3cd;color:#7a5b00;padding:6px 14px;border-radius:20px;font-size:.8rem;font-weight:600;margin-top:10px}
+.rev .stars{color:#f4b400;font-size:1.1rem;margin-bottom:10px}
+.rev p{font-style:italic;color:#444}
+.rev b{display:block;margin-top:14px;font-size:.9rem}
+.contact{display:grid;grid-template-columns:1fr 1.3fr;gap:30px;align-items:stretch}
+.info{background:#fff;border-radius:18px;padding:34px;box-shadow:0 6px 24px rgba(0,0,0,.06)}
+.info div{margin-bottom:20px}
+.info small{display:block;color:var(--c1);font-weight:700;text-transform:uppercase;font-size:.75rem;letter-spacing:1px}
+.contact iframe{width:100%;height:100%;min-height:340px;border:0;border-radius:18px}
+footer{background:var(--ink);color:#bbb;text-align:center;padding:34px 20px;font-size:.85rem}
+footer .logo{color:#fff;display:block;margin-bottom:8px}
+.wa{position:fixed;right:22px;bottom:22px;width:60px;height:60px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.25);z-index:60;transition:.25s}
+.wa:hover{transform:scale(1.08)}
+.wa svg{width:32px;height:32px;fill:#fff}
+@media(max-width:900px){nav a:not(.btn){display:none}.grid3,.grid4{grid-template-columns:1fr 1fr}.stats .wrap{grid-template-columns:1fr 1fr}.contact{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.gallery img{height:260px}}
+@media(max-width:560px){.grid3,.grid4{grid-template-columns:1fr}section{padding:64px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a href="#" class="logo">Pari Depilaci&#243;n con Hilo</a>
+<nav><a href="#servicios">Servicios</a><a href="#espacio">Nuestro trabajo</a><a href="#opiniones">Opiniones</a><a href="#contacto">Contacto</a>
+<a class="btn btn-main nav-cta" href="https://wa.me/34632115556?text=Hola%2C%20me%20gustar%C3%83%C2%ADa%20pedir%20cita%20en%20Pari%20Depilaci%C3%B3n%20con%20Hilo" target="_blank" rel="noopener">Reservar cita</a></nav>
+</div></header>
+
+<section class="hero"><div class="wrap">
+<span class="tag">★ 4,8 en Google · San Sebasti&#225;n de los Reyes</span>
+<h1>Cejas perfectas con la t&#233;cnica del hilo</h1>
+<p>Depilaci&#243;n con hilo precisa, r&#225;pida y delicada con la piel. Dise&#241;amos tus cejas seg&#250;n la forma de tu cara, en pleno centro de Sanse.</p>
+<div class="ctas"><a class="btn btn-main" href="https://wa.me/34632115556?text=Hola%2C%20me%20gustar%C3%83%C2%ADa%20pedir%20cita%20en%20Pari%20Depilaci%C3%B3n%20con%20Hilo" target="_blank" rel="noopener">Pedir cita por WhatsApp</a><a class="btn btn-ghost" href="#servicios">Ver servicios</a></div>
+</div></section>
+
+<div class="stats"><div class="wrap">
+<div><b>4,8★</b><span>Valoración en Google</span></div>
+<div><b>62</b><span>Reseñas de clientes</span></div>
+<div><b>100%</b><span>T&#233;cnica tradicional con hilo</span></div>
+<div><b>15&#39;</b><span>Servicio r&#225;pido, sin esperas</span></div>
+</div></div>
+
+<section id="servicios"><div class="wrap">
+<div class="head"><small>Servicios</small><h2>Todo lo que hacemos con hilo</h2><p>Sin cera ni qu&#237;micos: solo hilo, precisi&#243;n y manos expertas.</p></div>
+<div class="grid3"><div class="card"><div class="ic">🪡</div><h3>Dise&#241;o de cejas</h3><p>Damos forma a tus cejas seg&#250;n tus facciones para un resultado natural.</p></div>
+<div class="card"><div class="ic">✨</div><h3>Depilaci&#243;n de labio</h3><p>R&#225;pida y precisa, ideal para pieles sensibles.</p></div>
+<div class="card"><div class="ic">🌸</div><h3>Rostro completo</h3><p>Frente, mejillas, ment&#243;n y labio en una sola sesi&#243;n.</p></div>
+<div class="card"><div class="ic">🎨</div><h3>Tinte de cejas</h3><p>M&#225;s definici&#243;n y color para unas cejas con presencia.</p></div>
+<div class="card"><div class="ic">👁️</div><h3>Lifting de pesta&#241;as</h3><p>Curvatura natural que dura semanas, sin extensiones.</p></div>
+<div class="card"><div class="ic">💆‍♀️</div><h3>Henna de cejas</h3><p>Relleno y color semipermanente para cejas m&#225;s pobladas.</p></div></div>
+</div></section>
+
+<section id="espacio" class="alt"><div class="wrap">
+<div class="head"><small>Nuestro trabajo</small><h2>Precisi&#243;n en cada detalle</h2></div>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1790244342917-b08f24662dde?q=80&w=1400&auto=format&fit=crop" alt="Depilaci&#243;n con hilo en San Sebasti&#225;n de los Reyes" loading="lazy">
+<img src="https://images.unsplash.com/photo-1519415387722-a1c3bbef716c?q=80&w=800&auto=format&fit=crop" alt="Depilaci&#243;n con hilo" loading="lazy">
+<img src="https://images.unsplash.com/photo-1608558070426-e4e9b1c954d2?q=80&w=800&auto=format&fit=crop" alt="Depilaci&#243;n con hilo" loading="lazy">
+</div>
+</div></section>
+
+<section><div class="wrap">
+<div class="head"><small>Por qué elegirnos</small><h2>Por qu&#233; nuestras clientas repiten</h2></div>
+<div class="grid4"><div class="why"><div class="ic">🎯</div><h3>Precisi&#243;n</h3><p>L&#237;nea limpia y sim&#233;trica en cada ceja.</p></div>
+<div class="why"><div class="ic">🌿</div><h3>Piel cuidada</h3><p>El hilo no arrastra la piel como la cera.</p></div>
+<div class="why"><div class="ic">⏱️</div><h3>R&#225;pido</h3><p>Entras y sales en minutos.</p></div>
+<div class="why"><div class="ic">⭐</div><h3>4,8 en Google</h3><p>62 rese&#241;as de clientas reales.</p></div></div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+<div class="head"><small>Cómo reservar</small><h2>Tu cita en 4 pasos</h2></div>
+<div class="grid4">
+<div class="step"><div class="n">1</div><h3>Escríbenos</h3><p>Mándanos un WhatsApp con el servicio que te interesa.</p></div>
+<div class="step"><div class="n">2</div><h3>Elige hora</h3><p>Te proponemos el hueco que mejor te venga.</p></div>
+<div class="step"><div class="n">3</div><h3>Ven a vernos</h3><p>Estamos en Av. de Colmenar Viejo 23, San Sebasti&#225;n de los Reyes.</p></div>
+<div class="step"><div class="n">4</div><h3>Luce tus cejas</h3><p>Sales con un resultado natural y definido.</p></div>
+</div>
+</div></section>
+
+<section id="opiniones"><div class="wrap">
+<div class="head"><small>Opiniones</small><h2>Lo que dicen nuestros clientes</h2><span class="note">Reseñas de ejemplo - pendiente de reales</span></div>
+<div class="grid3"><div class="card rev"><div class="stars">â˜…â˜…â˜…â˜…â˜…</div><p>&ldquo;Siempre me deja las cejas perfectas y en un momento. Ya no voy a otro sitio.&rdquo;</p><b>Laura M.</b></div>
+<div class="card rev"><div class="stars">â˜…â˜…â˜…â˜…â˜…</div><p>&ldquo;Muy delicada, con la piel sensible es el &#250;nico sitio donde no me irrito.&rdquo;</p><b>Sara P.</b></div>
+<div class="card rev"><div class="stars">â˜…â˜…â˜…â˜…â˜…</div><p>&ldquo;Trato muy cercano y resultado impecable. Recomendad&#237;simo.&rdquo;</p><b>Nerea G.</b></div></div>
+</div></section>
+
+<section id="contacto" class="alt"><div class="wrap">
+<div class="head"><small>Contacto</small><h2>Ven a visitarnos</h2></div>
+<div class="contact">
+<div class="info">
+<div><small>Dirección</small>Av. de Colmenar Viejo, 23, 28701 San Sebasti&#225;n de los Reyes</div>
+<div><small>Teléfono / WhatsApp</small><a href="tel:+34632115556">632 11 55 56</a></div>
+<div><small>Valoración</small>4,8 ★ en Google (62 reseñas)</div>
+<a class="btn btn-main" href="https://wa.me/34632115556?text=Hola%2C%20me%20gustar%C3%83%C2%ADa%20pedir%20cita%20en%20Pari%20Depilaci%C3%B3n%20con%20Hilo" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+</div>
+<iframe src="https://maps.google.com/maps?q=Pari%20Depilaci%C3%B3n%20con%20Hilo%2C%20Av.%20de%20Colmenar%20Viejo%2C%2023%2C%2028701%20San%20Sebasti%C3%A1n%20de%20los%20Reyes&output=embed" loading="lazy" title="Mapa Pari Depilaci&#243;n con Hilo"></iframe>
+</div>
+</div></section>
+
+<footer><span class="logo">Pari Depilaci&#243;n con Hilo</span>Propuesta de diseño para Pari Depilaci&#243;n con Hilo - demo, no es el sitio web oficial del negocio.</footer>
+
+<a class="wa" href="https://wa.me/34632115556?text=Hola%2C%20me%20gustar%C3%83%C2%ADa%20pedir%20cita%20en%20Pari%20Depilaci%C3%B3n%20con%20Hilo" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.7 6.5L3 29l6.7-1.7c1.9 1 4.1 1.6 6.3 1.6 7.2 0 13-5.8 13-13S23.2 3 16 3zm0 23.7c-2 0-3.9-.5-5.6-1.5l-.4-.2-4 1 1.1-3.9-.3-.4C5.8 20 5.3 18 5.3 16 5.3 10.1 10.1 5.3 16 5.3S26.7 10.1 26.7 16 21.9 26.7 16 26.7zm5.9-8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.4 1.4 3.6c.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg></a>
+</body>
+</html>
